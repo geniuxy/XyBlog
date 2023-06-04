@@ -47,11 +47,6 @@ export const constantRoutes = [
       meta: { title: '首页', icon: 'dashboard' }
     }]
   }
-  // {
-  //   path: '/write',
-  //   component: () => import('@/views/content/article/write/index'),
-  //   hidden: true
-  // }
 ]
 
 const createRouter = () => new Router({

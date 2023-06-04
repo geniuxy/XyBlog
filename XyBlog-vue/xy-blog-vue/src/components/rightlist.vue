@@ -32,11 +32,11 @@
             <el-tooltip
               class="item"
               effect="dark"
-              content="微博"
+              content="微信"
               placement="top"
             >
-              <a :href="catchMeObj.sina" target="_blank"
-                ><i class="fa fa-fw fa-weibo"></i
+              <a :href="catchMeObj.wechat" target="_blank"
+                ><i class="fa fa-fw fa-wechat"></i
               ></a>
             </el-tooltip>
           </div>
@@ -44,11 +44,11 @@
             <el-tooltip
               class="item"
               effect="dark"
-              content="微信"
+              content="微博"
               placement="top"
             >
-              <a :href="catchMeObj.wechat" target="_blank"
-                ><i class="fa fa-fw fa-wechat"></i
+              <a :href="catchMeObj.sina" target="_blank"
+                ><i class="fa fa-fw fa-weibo"></i
               ></a>
             </el-tooltip>
             <el-tooltip
@@ -121,11 +121,11 @@ export default {
       artCommentList: "", //最新评论
       catchMeObj: {
         //个人信息
-        git: "https://gitee.com",
-        qq: "/static/img/qq.png",
+        git: "https://github.com/Yurnero-Xy/XyBlog",
+        qq: "/static/img/我的qq二维码.jpg",
         sina: "https://weibo.com",
-        wechat: "/static/img/qq.jpg",
-        csdn: "http://www.csdn.cn",
+        wechat: "/static/img/我的微信二维码.jpg",
+        csdn: "https://www.csdn.net",
         job: "https://www.baidu.com",
       },
     };

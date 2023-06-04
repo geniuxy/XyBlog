@@ -57,8 +57,8 @@
       >Login</el-button>
 
       <div class="tips">
-        <span style="margin-right: 20px">userName: sg</span>
-        <span> password: any</span>
+        <span style="margin-right: 20px">userName: xy</span>
+        <span> password: 密码请私聊Xy以获取</span>
       </div>
     </el-form>
   </div>
@@ -86,8 +86,8 @@ export default {
     }
     return {
       loginForm: {
-        userName: 'sg',
-        password: '1234'
+        userName: '',
+        password: ''
       },
       loginRules: {
         userName: [
