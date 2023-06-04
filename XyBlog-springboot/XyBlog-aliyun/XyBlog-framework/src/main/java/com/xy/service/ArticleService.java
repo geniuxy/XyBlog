@@ -25,4 +25,6 @@ public interface ArticleService extends IService<Article> {
     ResponseResult updateArticle(ArticleDto articleDto);
 
     ResponseResult deleteArticleById(String id);
+
+    void updateViewCountById(Long id, Long viewCount);
 }

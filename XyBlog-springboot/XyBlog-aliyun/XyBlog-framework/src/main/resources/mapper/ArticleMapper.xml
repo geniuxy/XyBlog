@@ -7,6 +7,9 @@
             #{articleId}
         </foreach>
     </update>
+    <update id="updateViewCountById">
+        UPDATE `xy_article` SET view_count = #{arg1} WHERE id=#{arg0}
+    </update>
     <select id="getTagsByArticleIDs" resultType="java.lang.Long">
         SELECT att.`tag_id`
         FROM `xy_article` a

@@ -1,6 +1,7 @@
 package com.xy.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fasterxml.jackson.databind.util.BeanUtil;
@@ -263,5 +264,10 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
         //去执行更新del_Flag操作
         getBaseMapper().updatedelFlagById(articleIds);
         return ResponseResult.okResult();
+    }
+
+    @Override
+    public void updateViewCountById(Long id, Long viewCount) {
+        getBaseMapper().updateViewCountById(id,viewCount);
     }
 }
