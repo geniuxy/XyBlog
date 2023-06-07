@@ -44,9 +44,10 @@ export const constantRoutes = [
       path: 'dashboard',
       name: 'Dashboard',
       component: () => import('@/views/dashboard/index'),
-      meta: { title: '首页', icon: 'dashboard', breadcrumb: true }
+      meta: { title: '首页', icon: 'dashboard'}
     }]
-  },
+  }
+  /** ,
   {
     path: '/write',
     component: Layout,
@@ -136,7 +137,7 @@ export const constantRoutes = [
       component: () => import('@/views/content/tag/index'),
       hidden: true
     }]
-  }
+  }*/
 ]
 
 const createRouter = () => new Router({
